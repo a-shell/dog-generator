@@ -1,29 +1,52 @@
 html {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     font-size: 2rem;
     font-family: 'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif;
     background: linear-gradient(lightyellow, orange);
+    height: 100vh;
 }
 
 header {
     margin-bottom: 30px;
     text-align: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
-/*Buttons, drop-downs, etc. need to be styled seperately from the rest of the document*/
+/*Buttons, drop-downs (select), etc. need to be styled seperately from the rest of the document*/
 select {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .section-container {
     display: flex;
     flex-direction: row;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    text-align: center;
     /*vw and vh are viewport width/height and assigns the distance based on a percentage of the current viewport*/
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
+ul {
+    text-align: left;
+}
+
 .column {
-    border: 2px solid green;
+    flex: 1;
+    /* border: 2px solid green; */
+}
+
+img{
+    max-width: 900px;
+    max-height: 700px;
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+#dog-name {
+    font-size: 2rem;
+    text-decoration: none;
 }
