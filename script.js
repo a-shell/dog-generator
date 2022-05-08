@@ -103,7 +103,7 @@ fetch(BREEDS_URL)
         },
 
         assignFact() {
-            this.fact = this.yatesShuffle(this.factList).slice(0,1); //Same as above, only selects one element
+            this.fact = this.factList[Math.floor(Math.random() * this.factList.length)]; //Selects random element from factList array
             document.getElementById("info").innerHTML = `Additional Info: ${this.fact}`;
         },
     };
